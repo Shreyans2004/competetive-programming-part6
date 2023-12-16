@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body{
+            overflow: hidden;
+        }
+      .main {
+      
+        height: 102vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+        flex-wrap: wrap;
+        background-size: cover;
+        background-position: center;
+        background-image: url("images/pexels-riccardo-bertolo-4245826.jpg");
+      
+      }
+
+      .card {
+        height: 300px;
+        width: 300px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-size: cover;
+        background-position: center;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.2s ease-in-out; /* Added transition property */
+      
+      }
+      #card1{
+        background-image: url("images/image1.jpeg");
+    }
+      #card2{
+        background-image: url("images/a-landscape-with-hills-and-trees-hvwpfxfz.jpeg");
+      }
+      #card3{
+        background-image: url("images/man-mandir-ghat-varanasi-ganges-river-PMED06.jpg");
+      }
+      
+
+      .card:hover {
+        transform: scale(1.05); /* Increase size on hover */
+      }
+      a {
+        cursor: pointer;
+        text-decoration: none;
+        
+        font-size: 1.2rem;
+      }
+
+      .ribbon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 0 20px 20px;
+        height: 50px;
+        width: 100%;
+        background-color: rgba(255,255,255, 0.6);
+        font-size: 1.4rem;
+        color: black;
+      }
+     
+    </style>
+    <title>Responsive Cards</title>
+  </head>
+  <body>
+    <div class="main">
+      <a href="https://shreyans2004.github.io/competetive-programming-part1/">
+        <div class="card" id="card1">
+          <div class="ribbon"> Ganga Museum</div>
+        </div>
+      </a>
+      <a href="https://shreyans2004.github.io/competetive-programming-part3/">
+        <div class="card" id="card2">
+          <div class="ribbon">Ganga Mountains</div>
+        </div>
+      </a>
+      <a href="https://shreyans2004.github.io/competetive-programming-part2/" >
+        <div class="card" id="card3">
+          <div class="ribbon">Varanasi Ganga Tour</div>
+        </div>
+      </a>
+    </div>
+  </body>
+</html>
